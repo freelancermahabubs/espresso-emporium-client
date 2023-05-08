@@ -101,7 +101,7 @@ const Home = () => {
         </Link>
       </div>
 
-      <div className="grid relative lg:grid-cols-2 px-16 md:grid-cols-2 my-20 gap-4">
+      <div className="grid relative lg:grid-cols-2 px-2 lg:px-12 md:grid-cols-2 my-20 gap-4">
         <img className="absolute  bottom-80 w-40  left-0 " src={bg2} alt="" />
         <img className="absolute right-0 " src={bg1} alt="bg1" />
         {coffees.map((coffee) => (
@@ -114,20 +114,18 @@ const Home = () => {
         ))}
       </div>
       <div>
-        <div>
-          <p className="text-center">Follow Us Now</p>
-          <h1 className="header-text font-semibold text-3xl text-center">
-            Follow on Instagram
-          </h1>
-        </div>
-        <div className="grid gap-y-3 px-16 md:grid-cols-2 my-5 lg:grid-cols-3">
-          <img src={Reactangle1} alt="Reactangle1" />
-          <img src={Reactangle2} alt="Reactangle2" />
-          <img src={Reactangle3} alt="Reactangle3" />
-          <img src={Reactangle4} alt="Reactangle4" />
-          <img src={Reactangle5} alt="Reactangle5" />
-          <img src={Reactangle6} alt="Reactangle6" />
-        </div>
+        <p className="text-center">Follow Us Now</p>
+        <h1 className="header-text font-semibold text-3xl text-center">
+          Follow on Instagram
+        </h1>
+      </div>
+      <div className="grid gap-3 px-2 lg:px-32 md:grid-cols-2 my-5 lg:grid-cols-3">
+        <img className="min-h-full" src={Reactangle1} alt="Reactangle1" />
+        <img className="min-h-full" src={Reactangle2} alt="Reactangle2" />
+        <img className="min-h-full" src={Reactangle3} alt="Reactangle3" />
+        <img className="min-h-full" src={Reactangle4} alt="Reactangle4" />
+        <img className="min-h-full" src={Reactangle5} alt="Reactangle5" />
+        <img className="min-h-full" src={Reactangle6} alt="Reactangle6" />
       </div>
     </div>
   );

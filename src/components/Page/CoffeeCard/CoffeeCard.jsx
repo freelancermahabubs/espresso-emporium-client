@@ -39,7 +39,7 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
   };
   return (
     <div className="bg-[ #F5F4F1] lg:z-auto md:z-50 z-50">
-      <div className="border rounded-md  min-h-full  lg:w-full ">
+      <div className="border rounded-md  ">
         <div className="grid grid-cols-3 bg-[#F5F4F1] items-center justify-center">
           <img className="h-40" src={photo} alt="" />
           <div>
