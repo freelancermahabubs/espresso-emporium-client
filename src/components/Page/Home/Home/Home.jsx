@@ -101,7 +101,7 @@ const Home = () => {
         </Link>
       </div>
 
-      <div className="grid relative lg:grid-cols-2 px-2 lg:px-12 md:grid-cols-2 my-20 gap-4">
+      <div className="grid relative lg:grid-cols-2  lg:px-12 md:grid-cols-2 my-20 gap-4">
         <img className="absolute  bottom-80 w-40  left-0 " src={bg2} alt="" />
         <img className="absolute right-0 " src={bg1} alt="bg1" />
         {coffees.map((coffee) => (
