@@ -19,16 +19,13 @@ const AddCoffee = () => {
 
     const newCoffee = { name, chef, supplier, taste, category, details, photo };
     console.log(newCoffee);
-    fetch(
-      "https://espresso-emporium-server-freelancermahabubs.vercel.app/coffees",
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(newCoffee),
-      }
-    )
+    fetch("https://coffee-stores-sepia.vercel.app/coffees", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newCoffee),
+    })
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

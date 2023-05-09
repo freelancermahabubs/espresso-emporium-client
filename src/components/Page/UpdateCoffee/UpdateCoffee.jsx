@@ -31,16 +31,13 @@ const UpdateCoffee = () => {
       photo,
     };
     console.log(updatedCoffee);
-    fetch(
-      `https://espresso-emporium-server-freelancermahabubs.vercel.app/coffees/${_id}`,
-      {
-        method: "PUT",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(updatedCoffee),
-      }
-    )
+    fetch(`https://coffee-stores-sepia.vercel.app/coffees/${_id}`, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(updatedCoffee),
+    })
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

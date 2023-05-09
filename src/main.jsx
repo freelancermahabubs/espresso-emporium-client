@@ -17,10 +17,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () =>
-          fetch(
-            "https://espresso-emporium-server-freelancermahabubs.vercel.app/coffees"
-          ),
+        loader: () => fetch("https://coffee-stores-sepia.vercel.app/coffees"),
       },
       {
         path: "/addCoffee",
@@ -30,17 +27,13 @@ const router = createBrowserRouter([
         path: "/updateCoffee/:id",
         element: <UpdateCoffee />,
         loader: ({ params }) =>
-          fetch(
-            `https://espresso-emporium-server-freelancermahabubs.vercel.app/coffees/${params.id}`
-          ),
+          fetch(`https://coffee-stores-sepia.vercel.app/coffees/${params.id}`),
       },
       {
         path: "coffeeDetails/:id",
         element: <CoffeeDetails />,
         loader: ({ params }) =>
-          fetch(
-            `https://espresso-emporium-server-freelancermahabubs.vercel.app/coffees/${params.id}`
-          ),
+          fetch(`https://coffee-stores-sepia.vercel.app/coffees/${params.id}`),
       },
     ],
   },
